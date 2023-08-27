@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  padding-top: 5px;
 }
 .bg {
   display: flex;
@@ -39,7 +40,7 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 768px;
+  max-width: 420px;
   gap: 15px;
 }
 
@@ -65,4 +66,15 @@ h1 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  margin-top: 10px;
+}
+.link {
+  text-decoration: underline;
+  text-decoration: #043dfb;
 }
