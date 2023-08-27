@@ -1,5 +1,8 @@
 const btn = document.getElementById("click-me");
 const heading = document.querySelector("h1");
+const emoji = document.querySelectorAll(".emoji");
+
+btn.addEventListener("click", clickMe);
 
 function clickMe() {
   alert("turn on the sound");
@@ -9,4 +12,13 @@ function clickMe() {
   heading.innerHTML = "Click all the emojis 👽";
 }
 
-btn.addEventListener("click", clickMe);
+const emojis = document.querySelectorAll(".emoji");
+const farts = document.querySelectorAll("audio");
+
+document.addEventListener("click", function () {
+  emojis.forEach((emoji, index) => {
+    emoji.addEventListener("click", function () {
+      farts[index].play();
+    });
+  });
+});
