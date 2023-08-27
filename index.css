@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.bg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+}
+button {
+  background-color: #043dfb;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  transition: 1ms ease-in;
+  cursor: pointer;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.041),
+    12.5px 12.5px 10px rgba(14, 0, 10, 0.051);
+  border-radius: 50px 0px 50px 0px;
+  margin-bottom: 25px;
+}
+
+button:hover {
+  background-color: #436f44;
+}
+h1 {
+  padding: 5px;
+}
+.emoji-line {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 768px;
+  gap: 15px;
+}
+
+.emoji {
+  font-size: 40px;
+  padding: 20px;
+  position: relative;
+  animation-name: move;
+  animation: move 2s linear infinite;
+  background-color: #96c2f8;
+  border-radius: 100%;
+  /* https://smoothshadows.com/#djEsMSw1LDAuMDgsMjQsMzIsMCwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwy */
+  box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.02), 0px 5px 4px rgba(3, 7, 18, 0.03),
+    0px 12px 9px rgba(3, 7, 18, 0.05), 0px 20px 15px rgba(3, 7, 18, 0.06),
+    0px 32px 24px rgba(3, 7, 18, 0.08);
+  cursor: pointer;
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
