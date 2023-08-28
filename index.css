@@ -9,7 +9,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  max-width: 650px;
+
   width: 100%;
   margin: 0 auto;
 }
@@ -32,9 +32,7 @@ button {
 button:hover {
   background-color: #436f44;
 }
-h1 {
-  padding: 5px;
-}
+
 .emoji-line {
   display: flex;
   justify-content: center;
